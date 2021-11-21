@@ -1,0 +1,8 @@
+{% extend 'base.html' %}
+{% block content %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <p>delete this tilte "{{ snack.title }}"</p>
+    <input type="submit"  value="delete">
+</form>
+{% endblock content %}
